@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    max-width: 1150px;
+}
+
+body>* {
+    padding: 0 100px;
+}
+
+header, footer {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    font-size: 18px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: bolder;
+}
+
+.hero-container {
+    background-color: #1f2937;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    gap: 50px;
+}
+
+.hero-container>div {
+    flex:1;
+}
+
+button {
+    background-color: #3882f6;
+    margin-top: 10px;
+    padding: 10px 30px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.img-placeholder {
+    background-color: grey;
+    /*height:200px;
+    width:400px;*/
+    color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-message {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+}
+
+.hero-secondary, .img-placeholder {
+    color: #e5e7eb;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+.logo {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* footer p {
+    padding: 30px 0;
+    font-size: small;
+} */
