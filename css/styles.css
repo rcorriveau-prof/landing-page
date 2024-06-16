@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: black;
+}
+
 body {
     font-family: sans-serif;
     max-width: 1150px;
+    margin: auto;
+    background-color: white;
 }
 
 body>* {
@@ -23,7 +29,19 @@ header, footer {
     justify-content: space-between;
 }
 
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: lightgrey;
+}
+
 .logo {
+    font-size: 24px;
+    color: #f9faf8;
     font-weight: bolder;
 }
 
@@ -46,12 +64,11 @@ button {
     color: white;
     font-weight: bold;
     border-radius: 10px;
+    border-style: solid;
 }
 
 .img-placeholder {
     background-color: grey;
-    /*height:200px;
-    width:400px;*/
     color: #e5e7eb;
     display: flex;
     justify-content: center;
@@ -68,27 +85,90 @@ button {
     color: #e5e7eb;
 }
 
-.links {
+.gallery-container {
+    padding: 50px 0;
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
 }
 
-.links a {
-    text-decoration: none;
-    color: lightgrey;
+.gallery-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
 }
 
-.logo {
+.gallery-images {
+    display: flex;
+    gap: 40px;
+}
+
+.image-and-text {
+    width: 150px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.square {
+    height: 150px;
+    width: 150px;
+    border: 5px solid #3882f6;
+    border-radius: 10px;
+}
+
+.quote-container {
+    background-color: #e5e7eb;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+cite {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 32px;
+    color: #1f2937;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.author {
+    padding-right: 30px;
+    text-align: right;
     font-size: 24px;
-    color: #f9faf8;
+    font-weight: bolder;
+}
+
+.call-to-action-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.call-to-action-box {
+    width: 850px;
+    background-color: #3882f6;
+    color: white;
+}
+
+.call-to-action {
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.call-to-action-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.call-to-action button{
+    border-color: white;
 }
 
 footer {
     display: flex;
     justify-content: center;
-}
-
-/* footer p {
     padding: 30px 0;
-    font-size: small;
-} */
+}
